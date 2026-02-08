@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script defer src="assets/main.js"></script>
+  </head>
+
+  <body>
+    <header class="app-header">
+      <div class="header-content">
+        <div class="brand">
+          <i class="fas fa-book-reader"></i>
+          <h1>Bookshelf App</h1>
+        </div>
+
+        <div class="header-actions">
+          <form
+            id="searchBook"
+            class="search-form"
+            data-testid="searchBookForm"
+          >
+            <div class="search-box">
+              <input
+                id="searchBookTitle"
+                type="text"
+                placeholder="Cari judul buku..."
+                data-testid="searchBookFormTitleInput"
+              />
+              <button
+                id="searchSubmit"
+                type="submit"
+                data-testid="searchBookFormSubmitButton"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+
+          <button id="btnShowModal" class="btn-add-book">
+            <i class="fas fa-plus"></i> Tambah Buku
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div id="bookModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 id="modalTitle">Tambah Buku Baru</h2>
+            <span class="close-modal">&times;</span>
+          </div>
+
+          <form id="bookForm" data-testid="bookForm">
+            <div class="form-group">
+              <label for="bookFormTitle">Judul</label>
+              <input
+                id="bookFormTitle"
+                type="text"
+                required
+                data-testid="bookFormTitleInput"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="bookFormAuthor">Penulis</label>
+              <input
+                id="bookFormAuthor"
+                type="text"
+                required
+                data-testid="bookFormAuthorInput"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="bookFormYear">Tahun</label>
+              <input
+                id="bookFormYear"
+                type="number"
+                required
+                data-testid="bookFormYearInput"
+              />
+            </div>
+
+            <div class="form-check">
+              <label for="bookFormIsComplete">Selesai dibaca</label>
+              <input
+                id="bookFormIsComplete"
+                type="checkbox"
+                data-testid="bookFormIsCompleteCheckbox"
+              />
+            </div>
+
+            <button
+              id="bookFormSubmit"
+              type="submit"
+              class="btn-submit"
+              data-testid="bookFormSubmitButton"
+            >
+              Simpan Buku
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <section class="shelf-section">
+        <div class="shelf-header">
+          <div class="shelf-title">
+            <h2 class="section-title">
+              Sedang Dibaca <i class="fas fa-book-open"></i>
+            </h2>
+          </div>
+          <span class="book-count" id="incompleteBookCount">0 buku</span>
+        </div>
+
+        <div class="empty-state" id="emptyIncomplete">
+          <i class="fas fa-book-open"></i>
+          <p>Belum ada buku yang sedang dibaca</p>
+        </div>
+
+        <div
+          id="incompleteBookList"
+          class="book-grid"
+          data-testid="incompleteBookList"
+        ></div>
+      </section>
+
+      <section class="shelf-section">
+        <div class="shelf-header">
+          <div class="shelf-title">
+            <h2 class="section-title">
+              Selesai Dibaca <i class="fas fa-check-circle"></i>
+            </h2>
+          </div>
+          <span class="book-count" id="completeBookCount">0 buku</span>
+        </div>
+
+        <div class="empty-state" id="emptyComplete">
+          <i class="fas fa-check-circle"></i>
+          <p>Belum ada buku yang selesai dibaca</p>
+        </div>
+
+        <div
+          id="completeBookList"
+          class="book-grid"
+          data-testid="completeBookList"
+        ></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2026 Bookshelf Apps — Submission Dicoding by Novendy Farhanudin
+      </p>
+    </footer>
+  </body>
+</html>
