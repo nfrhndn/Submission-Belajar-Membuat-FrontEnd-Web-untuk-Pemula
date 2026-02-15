@@ -41,19 +41,4 @@ Project ini adalah **Static Web**, jadi Anda tidak perlu menginstall _dependenci
    - Klik kanan > _Open with_ > Google Chrome / Microsoft Edge / Firefox.
    - Atau cukup drag & drop file `index.html` ke browser Anda.
 
-## 📸 Preview Aplikasi
-
-_(Anda bisa menambahkan screenshot aplikasi di sini nanti)_
-
-Tampilan antarmuka dirancang bersih dan _user-friendly_, memudahkan pengguna untuk melihat mana buku yang masih harus dibaca dan mana yang sudah selesai.
-
-## 🧑‍💻 Author
-
-**Novendy Farhanudin**
-
-- Mahasiswa / Web Developer Enthusiast
-- Submission untuk kelas IDCamp / Dicoding
-
----
-
 _Dibuat dengan ❤️ dan ☕ untuk menyelesaikan tantangan Dicoding._
