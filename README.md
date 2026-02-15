@@ -1,38 +1,59 @@
-# Bookshelf App Starter Project
+# 📚 Bookshelf Apps
 
-Ini adalah starter project untuk siswa yang sedang mengerjakan tugas akhir kelas Belajar Membuat Front-End Web untuk Pemula.
+> **Submission Project:** Belajar Membuat Front-End Web untuk Pemula (Dicoding Indonesia)
 
-## Ketentuan Pengerjaan Tugas
+Aplikasi web sederhana namun _powerful_ untuk mengelola daftar bacaan buku Anda. Dibangun menggunakan teknologi web standar (HTML, CSS, JavaScript) dengan pemanfaatan **DOM Manipulation** dan **Web Storage** (LocalStorage) agar data tetap tersimpan meskipun browser ditutup.
 
-Untuk mempermudah penilaian submission yang dikirim, Anda perlu memahami ketentuan-ketentuan berikut dalam mengerjakan tugas ini.
+## 🌟 Fitur Utama
 
-- Anda dilarang mengedit atau menghapus atribut `data-testid` pada elemen-elemen HTML.
-- Ini masih berkaitan dengan poin sebelumnya. Jika Anda memiliki kebutuhan seperti styling elemen dan perlu menambahkan atribut seperti class, itu tidak dilarang selama atribut `data-testid` beserta nilainya tidak diubah atau dihapus.
-- Dalam menampilkan data-data buku, Anda wajib memberikan beberapa atribut pada setiap elemennya.
+Aplikasi ini memiliki fitur CRUD (_Create, Read, Update, Delete_) lengkap:
 
-  - `data-bookid`: menampung nilai ID masing-masing buku.
-  - `data-testid`: penanda jenis data buku yang ditampilkan. Berikut daftarnya.
-    - `bookItem`: elemen kontainer yang menampung data-data buku.
-    - `bookItemTitle`: judul buku
-    - `bookItemAuthor`: penulis buku
-    - `bookItemYear`: tahun rilis buku
-    - `bookItemIsCompleteButton`: tombol untuk mengubah kondisi buku dari “Belum selesai dibaca” menjadi “Selesai dibaca” atau sebaliknya.
-    - `bookItemDeleteButton`: tombol untuk menghapus buku.
-    - `bookItemEditButton`: tombol untuk mengubah data buku.
+- **📖 Tambah Buku Baru**: Input data buku meliputi Judul, Penulis, dan Tahun.
+- **🔍 Cari Buku**: Fitur pencarian _real-time_ untuk menemukan buku dengan cepat.
+- **📂 Dua Rak Penyimpanan**:
+  - **Sedang Dibaca**: Untuk buku yang progress bacanya belum selesai.
+  - **Selesai Dibaca**: Untuk buku yang sudah tamat.
+- **⇄ Pindah Rak**: Memindahkan buku antar rak dengan satu klik.
+- **✏️ Edit Data**: Mengubah detail buku jika ada kesalahan input.
+- **❌ Hapus Buku**: Menghapus buku dari daftar (dengan konfirmasi agar tidak terhapus tidak sengaja).
+- **💾 Auto-Save**: Data otomatis tersimpan di memory browser (_LocalStorage_).
 
-  Agar pengerjaan tugas lebih mudah, Anda dapat mengikuti templat buku berikut.
+## 🛠️ Teknologi yang Digunakan
 
-```html
-<div data-bookid="{{ ID_buku }}" data-testid="bookItem">
-  <h3 data-testid="bookItemTitle">{{ judul_buku }}</h3>
-  <p data-testid="bookItemAuthor">Penulis: {{ penulis_buku }}</p>
-  <p data-testid="bookItemYear">Tahun: {{ tahun_rilis_buku }}</p>
-  <div>
-    <button data-testid="bookItemIsCompleteButton">{{ tombol_untuk_ubah_kondisi }}</button>
-    <button data-testid="bookItemDeleteButton">{{ tombol_untuk_hapus }}</button>
-    <button data-testid="bookItemEditButton">{{ tombol_untuk_edit }}</button>
-  </div>
-</div>
-```
+Project ini dibuat murni menggunakan teknologi dasar web tanpa _framework_ tambahan, untuk mendemonstrasikan pemahaman logika dasar pemrograman web.
 
-Selamat mengerjakan dan sukses selalu!
+- **HTML5**: Struktur semantik halaman.
+- **CSS3**: Styling responsif dan modern layouting (Flexbox).
+- **JavaScript (ES6+)**: Logika aplikasi, manipulasi DOM, dan event handling.
+- **Font Awesome**: Ikon antarmuka untuk pengalaman pengguna yang lebih baik.
+
+## 🚀 Cara Menjalankan Project
+
+Project ini adalah **Static Web**, jadi Anda tidak perlu menginstall _dependencies_ apapun (seperti `npm` atau `composer`).
+
+1. **Download/Clone Repository ini**.
+   ```bash
+   git clone https://github.com/username-anda/bookshelf-app.git
+   ```
+2. **Buka Folder Project**.
+3. **Jalankan File**:
+   - Cari file `index.html`.
+   - Klik kanan > _Open with_ > Google Chrome / Microsoft Edge / Firefox.
+   - Atau cukup drag & drop file `index.html` ke browser Anda.
+
+## 📸 Preview Aplikasi
+
+_(Anda bisa menambahkan screenshot aplikasi di sini nanti)_
+
+Tampilan antarmuka dirancang bersih dan _user-friendly_, memudahkan pengguna untuk melihat mana buku yang masih harus dibaca dan mana yang sudah selesai.
+
+## 🧑‍💻 Author
+
+**Novendy Farhanudin**
+
+- Mahasiswa / Web Developer Enthusiast
+- Submission untuk kelas IDCamp / Dicoding
+
+---
+
+_Dibuat dengan ❤️ dan ☕ untuk menyelesaikan tantangan Dicoding._
